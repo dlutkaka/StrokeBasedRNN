@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    {
+      "signature_train_list": "./experiments/datalist/1v1_mobisig_train.txt",
+      "signature_val_list": "./experiments/datalist/1v1_mobisig_val.txt",
+      "dir_path": "/home/deeplearning/work/Deeplearning/dataset/writingID/online/mobisig_processed/"
+    },
+    {
+      "signature_train_list": "./experiments/datalist/1v1_biosecur_mat_train.txt",
+      "signature_val_list": "./experiments/datalist/1v1_biosecur_mat_val.txt",
+      "dir_path": "/home/deeplearning/work/Deeplearning/dataset/writingID/online/BiosecurID-SONOF-DB/processed_normalized/"
+    },
+    {
+      "signature_train_list": "./experiments/datalist/1v1_mcyt_train.txt",
+      "signature_val_list": "./experiments/datalist/1v1_mcyt_val.txt",
+      "dir_path": "/home/deeplearning/work/Deeplearning/dataset/writingID/online/mcyt100_processed/"
+    },
+    {
+      "signature_train_list": "./experiments/datalist/1v1_mmsig_train.txt",
+      "signature_val_list": "./experiments/datalist/1v1_mmsig_val.txt",
+      "dir_path": "/home/deeplearning/work/Deeplearning/dataset/writingID/online/BIP-MMSIG_normalized/mobile/"
+    }
+  ],
+  "is_augment": false,
+  "learning_rate": 1e-4,
+  "batch_size": 16,
+  "num_epochs": 18,
+  "use_batch_norm": true,
+  "keep_prob": 0.5,
+  "features": 48,
+  "max_sequence_length": 2000,
+  "stroke_encoder": false,
+  "random_forged": false,
+  "attention": false,
+  "stroke_base": false,
+  "global_feature": false,
+  "global_feature_num": 61,
+  "convolution": false,
+  "bidirectional": true,
+  "length_per_stroke": 400,
+  "length_per_signature": 20,
+  "early_concat": true,
+  "num_parallel_calls": 4,
+  "save_summary_steps": 100,
+  "save_checkpoints_steps": 300,
+  "num_gpus": 3,
+  "keep_checkpoint_max": 30,
+  "eval_steps": 10
+}
